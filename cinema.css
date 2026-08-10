@@ -1,0 +1,254 @@
+/* Definição de Variáveis de Cores (Paleta Escura do Modelo) */
+:root {
+    --bg-main: #0c1020;       /* Azul marinho de fundo */
+    --bg-header: #070a14;     /* Topo mais escuro */
+    --bg-nav: #12182d;        /* Fundo dos menus */
+    --accent-purple: #7f00ff; /* Roxo para destaques */
+    --accent-pink: #ff007f;   /* Rosa choque */
+    --text-white: #ffffff;
+    --text-gray: #b0b5c6;
+    --focus-ring: #ffcc00;    /* Amarelo de alto contraste para acessibilidade */
+  }
+  
+  /* Reset Geral */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Foco de Acessibilidade (WCAG 2.4.7) */
+  a:focus, button:focus, select:focus {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+  
+  /* Estrutura do Topo */
+  .site-header {
+    background-color: var(--bg-header);
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .social-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+  
+  .social-nav img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
+  }
+  
+  .social-nav img:hover {
+    transform: scale(1.1);
+  }
+  
+  .accessibility-btn {
+    background-color: transparent;
+    color: var(--text-white);
+    border: 1px solid var(--text-gray);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Barra de Filtros e Busca */
+  .search-bar-container {
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 15px 5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form-group label {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+  }
+  
+  .search-form select {
+    background-color: #1a2238;
+    color: #fff;
+    border: 1px solid #2d3958;
+    padding: 8px 15px;
+    border-radius: 4px;
+    min-width: 150px;
+  }
+  
+  .btn-search {
+    background-color: var(--accent-pink);
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  /* Menu de Navegação Horizontal */
+  .main-nav {
+    background-color: var(--bg-nav);
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0 5%;
+    overflow-x: auto;
+  }
+  
+  .nav-links a {
+    display: block;
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--accent-pink);
+  }
+  
+  /* Menu de Status (Em Cartaz / Em Breve) */
+  .status-nav {
+    margin: 30px 5% 15px 5%;
+  }
+  
+  .status-links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .status-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #1a2238;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .status-links a.active, .status-links a:hover {
+    background-color: #253254;
+    color: #fff;
+  }
+  
+  /* Banner Principal Fluído */
+  .hero-banner {
+    background: linear-gradient(135px, var(--accent-pink) 0%, var(--accent-purple) 100%);
+    margin: 0 5% 40px 5%;
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner-logo {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -1px;
+    text-shadow: 3px 3px 0px #000;
+  }
+  
+  .banner-info {
+    text-align: right;
+  }
+  
+  .promo-text {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  .price-tag {
+    display: inline-block;
+    background-color: #000;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Rodapé */
+  .site-footer {
+    background-color: var(--bg-header);
+    padding: 40px 5%;
+    text-align: center;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .app-downloads {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .app-downloads img {
+    height: 35px;
+  }
+  
+  /* Responsividade Básica para Celular */
+  @media (max-width: 768px) {
+    .header-container, .hero-banner, .search-form {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .banner-info {
+      text-align: center;
+    }
+  }
+  

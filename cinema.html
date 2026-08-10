@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinemundo - Início</title>
+  <link rel="stylesheet" href="cinema.css">
+</head>
+<body>
+
+  <!-- TOPO DO SITE -->
+  <header class="site-header">
+    <div class="header-container">
+      
+      <!-- Logo Principal -->
+      <div class="logo-area">
+        <a href="index.html">
+          <img src="img/logo-cinemundo.png" alt="Logotipo Cinemundo - Página Inicial" class="logo">
+        </a>
+      </div>
+
+      <!-- Redes Sociais e Acessibilidade -->
+      <div class="header-actions">
+        <nav class="social-nav" aria-label="Redes Sociais">
+          <ul>
+            <li><a href="#" target="_blank"><img src="img/instagram.png" alt="Visitar nosso perfil no Instagram"></a></li>
+            <li><a href="#" target="_blank"><img src="img/facebook.png" alt="Visitar nossa página no Facebook"></a></li>
+            <li><a href="#" target="_blank"><img src="img/tiktok.png" alt="Visitar nosso perfil no TikTok"></a></li>
+          </ul>
+        </nav>
+        
+        <!-- Botão de Alto Contraste (WCAG) -->
+        <button id="contrast-toggle" class="accessibility-btn" aria-label="Ativar modo de alto contraste">
+          🌓 Alto Contraste
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Barra de Filtros e Busca -->
+    <div class="search-bar-container">
+      <form role="search" class="search-form" action="#" method="GET">
+        <div class="form-group">
+          <label for="select-cinema">Consulte a programação:</label>
+          <select id="select-cinema" name="cinema">
+            <option value="mundo">Mundo</option>
+            <!-- Adicione mais opções de cidades/cinemas aqui -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="select-genero">Filtrar por Gênero:</label>
+          <select id="select-genero" name="genero">
+            <option value="">Todos os gêneros</option>
+            <option value="acao">Ação</option>
+            <option value="comedia">Comédia</option>
+            <option value="drama">Drama</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-search">Buscar</button>
+      </form>
+    </div>
+
+    <!-- Menu de Navegação Principal -->
+    <nav class="main-nav" aria-label="Navegação Principal">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cinemas">Cinemas</a></li>
+        <li><a href="#filmes">Filmes</a></li>
+        <li><a href="#venda-online">Venda Online</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#promocoes">Promoções</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL (BANNER HERO) -->
+  <main class="main-content">
+    
+    <!-- Submenu de Status de Filmes -->
+    <nav class="status-nav" aria-label="Status dos Filmes">
+      <ul class="status-links">
+        <li><a href="#em-cartaz" class="active">Em Cartaz</a></li>
+        <li><a href="#em-breve">Em Breve</a></li>
+        <li><a href="#venda-antecipada">Venda Antecipada</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner Destaque semelhante ao Terça Plus -->
+    <section class="hero-banner" aria-labelledby="banner-title">
+      <div class="banner-highlight">
+        <h1 id="banner-title" class="banner-logo">TERÇA PLUS</h1>
+      </div>
+      <div class="banner-info">
+        <p class="promo-text">TODO MUNDO PAGA MEIA</p>
+        <span class="price-tag">INGRESSOS A PARTIR DE R$ 11,00</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ DO SITE -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Cinemundo. Todos os direitos reservados.</p>
+    <div class="app-downloads">
+      <p>Baixe nossos aplicativos:</p>
+      <a href="#" aria-label="Baixar aplicativo para Android na Google Play Store">
+        <img src="img/logo-android.png" alt="Google Play Store">
+      </a>
+      <a href="#" aria-label="Baixar aplicativo para iOS na App Store da Apple">
+        <img src="img/logo-apple.png" alt="Apple App Store">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
