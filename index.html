@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinemundo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -30,30 +32,30 @@
         <div id="Catálogo">
 
             <p>Consulte o nosso catálogo</p>
-            <form method="get" action="filmes.html"></form>
-            <select name="país" id="país">
-                <option value="mundo">Mundo</option>
-                <option value="US">Estados Unidos</option>
-                <option value="BR">Brasil</option>
-                <option value="MX">México</option>
-                <option value="NG">Nigéria</option>
-                <option value="EG">Egito</option>
-                <option value="FR">França</option>
-                <option value="IT">Itália</option>
-            </select>
-            <select name="gênero" id="gênero">
-                <option value="gênero">gênero</option>
-                <option value="ação">Ação</option>
-                <option value="comédia">Comédia</option>
-                <option value="drama">Drama</option>
-                <option value="terror">Terror</option>
-                <option value="egito">Romance</option>
-                <option value="fc">Ficção Científica</option>
-            </select>
+            <form method="get" action="filmes.html">
+                <select name="país" id="país">
+                    <option value="mundo">Mundo</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="BR">Brasil</option>
+                    <option value="MX">México</option>
+                    <option value="NG">Nigéria</option>
+                    <option value="EG">Egito</option>
+                    <option value="FR">França</option>
+                    <option value="IT">Itália</option>
+                </select>
+                <select name="gênero" id="gênero">
+                    <option value="gênero">gênero</option>
+                    <option value="ação">Ação</option>
+                    <option value="comédia">Comédia</option>
+                    <option value="drama">Drama</option>
+                    <option value="terror">Terror</option>
+                    <option value="egito">Romance</option>
+                    <option value="fc">Ficção Científica</option>
+                </select>
 
-            <div id="Botão de Busca">
-                <input type="submit" value="Buscar">
-            </div>
+                <div id="botao-busca">
+                    <input type="submit" value="Buscar">
+                </div>
             </form>
         </div>
         <div id="menu">
@@ -75,6 +77,9 @@
                 </li>
                 <li>
                     <a href="promoções.html">Promoções</a>
+                </li>
+                <li>
+                    <a href="contato.html">Fale Conosco</a>
                 </li>
             </ul>
         </div>
@@ -129,15 +134,37 @@
                 </a>
             </div>
         </div>
-        <div id="Assinatura newsletter">
+        <div id="assinatura-newsletter">
             <p>Assine nossa newsletter:</p>
             <input type="text" placeholder="Nome completo"><br>
             <input type="email" placeholder="email">
         </div>
-        <div id="Pop-up promoção">
+        <div id="popup-promocao">
             <a href="promoções.html">
                 <img src="" alt="banner promoção">
             </a>
+        </div>
+        <div id="abas-cinemundo">
+            <ul>
+                <li>
+                    <a href="cinemas.html">Cinemas</a>
+                </li>
+                <li>
+                    <a href="filmes.html">Filmes</a>
+                </li>
+                <li>
+                    <a href="venda.html">Vendas</a>
+                </li>
+                <li>
+                    <a href="serviços.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="promoções.html">Promoções</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>

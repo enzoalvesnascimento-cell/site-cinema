@@ -1,0 +1,47 @@
+/* 1. Zera margens, paddings e define o modelo de caixa correto */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Suaviza a rolagem da página e garante altura total */
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+/* 3. Ajusta o corpo para melhor legibilidade e renderização de fontes */
+body {
+    min-height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Remove estilos padrão de listas */
+ol, ul {
+    list-style: none;
+}
+
+/* 5. Remove sublinhados e herda a cor do texto nos links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 6. Garante que imagens e mídias não quebrem o layout */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 7. Garante que elementos de formulário herdem as fontes do elemento pai */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 8. Evita que caixas de texto ultrapassem os limites da tela */
+textarea {
+    resize: vertical;
+}
