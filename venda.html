@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,182 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div id="cabeça">
+        <div id="Logo_Cinemundo">
+            <img src="" alt="Logo Cinemundo">
+        </div>
+        <div id="Logo_Instagram">
+            <a href="https://www.instagram.com/">
+                <img src="" alt="Instagram Cinemundo">
+            </a>
+        </div>
+        <div id="Logo_Facebook">
+            <a href="https://www.facebook.com/?locale=pt_BR">
+                <img src="" alt="Facebook Cinemundo">
+            </a>
+        </div>
+        <div id="Logo_Tiktok">
+            <a href="https://www.tiktok.com/pt-BR/">
+                <img src="" alt="Tiktok Cinemundo">
+            </a>
+        </div>
+        <div id="Catálogo">
+
+            <p>Consulte o nosso catálogo</p>
+            <form method="get" action="filmes.html">
+                <select name="país" id="país">
+                    <option value="mundo">Mundo</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="BR">Brasil</option>
+                    <option value="MX">México</option>
+                    <option value="NG">Nigéria</option>
+                    <option value="EG">Egito</option>
+                    <option value="FR">França</option>
+                    <option value="IT">Itália</option>
+                </select>
+                <select name="gênero" id="gênero">
+                    <option value="gênero">gênero</option>
+                    <option value="ação">Ação</option>
+                    <option value="comédia">Comédia</option>
+                    <option value="drama">Drama</option>
+                    <option value="terror">Terror</option>
+                    <option value="egito">Romance</option>
+                    <option value="fc">Ficção Científica</option>
+                </select>
+
+                <div id="botao-busca">
+                    <input type="submit" value="Buscar">
+                </div>
+            </form>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="cinemas.html">Cinemas</a>
+                </li>
+                <li>
+                    <a href="filmes.html">Filmes</a>
+                </li>
+                <li>
+                    <a href="venda.html">Venda Online</a>
+                </li>
+                <li>
+                    <a href="promoções.html">Promoções</a>
+                </li>
+                <li>
+                    <a href="contato.html">Fale Conosco</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="corpo">
+        <h2>Controle de Bilheteria - Estreia</h2>
+
+        <!-- Formulário de Vendas -->
+        <div class="venda-container">
+            <div class="input-grupo">
+                <label>Meia-entrada (Máx: 80):</label>
+                <input type="number" id="qtdMeia" min="0" value="0">
+            </div>
+
+            <div class="input-grupo">
+                <label>Inteira (Máx: 100):</label>
+                <input type="number" id="qtdInteira" min="0" value="0">
+            </div>
+
+            <div class="input-grupo">
+                <label>VIP (Máx: 20):</label>
+                <input type="number" id="qtdVip" min="0" value="0">
+            </div>
+
+            <button onclick="calcularBilheteria()" class="btn-acao">Calcular Vendas</button>
+        </div>
+
+        <!-- Painel de Resultados -->
+        <div id="resultado" class="resultado-painel" style="display: none;">
+            <h3>Resumo do Faturamento</h3>
+            <p id="resFaturamento"></p>
+            <p id="resEstoque"></p>
+            <p id="resMedia"></p>
+        </div>
+
+    <script src="venda.js"></script>
 </body>
+</div>
+
+<div id="rodapé">
+    <div id="Logo-Cinemundo-Rodapé">
+        <img src="" alt="Logo-Cinemundo">
+    </div>
+    <div id="Redes-Sociais-Cinemundo">
+        <p>Siga-nos em nossas redes sociais</p>
+        <div id="Logo_Instagram">
+            <a href="https://www.instagram.com/">
+                <img src="" alt="Instagram Cinemundo">
+            </a>
+        </div>
+        <div id="Logo_Facebook">
+            <a href="https://www.facebook.com/?locale=pt_BR">
+                <img src="" alt="Facebook Cinemundo">
+            </a>
+        </div>
+        <div id="Logo_Tiktok">
+            <a href="https://www.tiktok.com/pt-BR/">
+                <img src="" alt="Tiktok Cinemundo">
+            </a>
+        </div>
+    </div>
+    <div id="Aplicativos-Cinemundo">
+        <p>Baixe nossos aplicativos</p>
+        <div id="Logo-Loja-Android">
+            <a href="https://play.google.com">
+                <img src="" alt="Logo-Android">
+            </a>
+        </div>
+        <div id="Logo-Loja-IOS">
+            <a href="https://apps.apple.com/">
+                <img src="" alt="Logo-Apple">
+            </a>
+        </div>
+    </div>
+    <div id="assinatura-newsletter">
+        <p>Assine nossa newsletter:</p>
+        <input type="text" placeholder="Nome completo"><br>
+        <input type="email" placeholder="email">
+    </div>
+    <div id="popup-promocao">
+        <a href="promoções.html">
+            <img src="" alt="banner promoção">
+        </a>
+    </div>
+    <div id="abas-cinemundo">
+        <ul>
+            <li>
+                <a href="cinemas.html">Cinemas</a>
+            </li>
+            <li>
+                <a href="filmes.html">Filmes</a>
+            </li>
+            <li>
+                <a href="venda.html">Vendas</a>
+            </li>
+            <li>
+                <a href="serviços.html">Serviços</a>
+            </li>
+            <li>
+                <a href="promoções.html">Promoções</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+
 </html>

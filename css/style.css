@@ -201,10 +201,10 @@ input[type="submit"]:hover {
    #abas-cinemundo ul {
     display: flex;               /* Alinha os itens lado a lado (horizontalmente) */
     text-align: center;    /* Centraliza os itens na horizontal */
-    gap: 160px;                   /* Espaçamento entre as opções do menu */
+    gap: 100px;                   /* Espaçamento entre as opções do menu */
     list-style: none;            /* Remove as bolinhas da lista */
-    padding: 0;
-    margin: 20%;
+    padding: 10px;
+    margin: 10px;
 }
 
 #abas-cinemundo li {
@@ -230,4 +230,207 @@ input[type="submit"]:hover {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #222; /* Linha sutil separando das outras seções */
+}
+
+#corpo {
+    /* Definições de Fundo e Texto */
+    background-color: #141414;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    
+    /* Espaçamento Interno e Alinhamento */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    /* Layout Responsivo */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Estilo para Títulos dentro do Corpo */
+#corpo h1, #corpo h2, #corpo h3 {
+    color: #e50914; /* Vermelho vibrante estilo cinema */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+}
+
+/* Estilo para Links dentro do Corpo */
+#corpo a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#corpo a:hover {
+    color: #e50914;
+    transform: scale(1.02);
+}
+
+/* Customização para Grids de Catálogos ou Filmes se houver */
+#corpo .catalogo, #corpo .filmes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo para Botões ou Elementos de Ação */
+#corpo button, #corpo .btn-acao {
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#corpo button:hover, #corpo .btn-acao:hover {
+    background-color: #b80710;
+}
+
+#corpo .filme-card {
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o botão para a base */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 100%; /* Força todos os cards a terem a mesma altura */
+}
+
+#corpo .filme-card p {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Faz o texto ocupar o espaço restante e alinhar o botão */
+}
+
+#corpo .filme-card .btn-acao {
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: auto; /* Garante o alinhamento no fundo do card */
+    transition: background 0.3s ease;
+}
+
+/* Estilos para a página de vendas */
+.venda-container {
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.input-grupo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.input-grupo input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #2b2b2b;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.resultado-painel {
+    background-color: #1c1c1c;
+    border-left: 4px solid #e50914;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.resultado-painel p {
+    margin: 10px 0;
+    color: #ddd;
+}
+
+/* Container das promoções em colunas responsivas */
+#corpo .promocoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Cartão individual de promoção */
+#corpo .promo-card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 25px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#corpo .promo-card:hover {
+    transform: translateY(-5px);
+    border-color: #e50914; /* Destaca a borda em vermelho no hover */
+}
+
+/* Etiqueta de destaque (Badge) */
+#corpo .badge-desconto {
+    background-color: #e50914;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#corpo .promo-card h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 10px 0;
+    border: none;
+    padding: 0;
+}
+
+#corpo .promo-card p {
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Texto de validade no rodapé do cartão */
+#corpo .promo-card .validade {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    font-style: italic;
 }
